@@ -40,12 +40,17 @@ html::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
 
+.home-content h1 {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3rem 9%;
+    padding: 1.5rem 9%;
     background: rgba(0, 0, 0, 0.7);
     filter: drop-shadow(10px);
     display: flex;
@@ -69,7 +74,7 @@ html::-webkit-scrollbar-thumb {
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 6rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -88,6 +93,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     color: white;
+    margin-left: 20px;
 }
 
 .menu-tampilan a:hover {
@@ -116,11 +122,11 @@ nav li:first-child {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 180px;
     z-index: 999;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.5);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -215,10 +221,11 @@ span {
 
 .home-img img {
     position: relative;
-    width: 32vw;
+    width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .home-img img:hover {
@@ -227,8 +234,12 @@ span {
 }
 
 .home-content p {
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.home-content .typing-text {
+    font-size: 35px;
 }
 
 .sosial-icons a {
@@ -275,14 +286,9 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.typing-text {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
 .typing-text span {
     position: relative;
+    font-size: 30px;
 }
 
 .typing-text span::before {
@@ -310,19 +316,19 @@ span {
 
 @keyframes words {
     0%, 20% {
-        content: "Web Developer";
+        content: "Junior Web Developer";
     }
     21%, 40% {
-        content: "Pelajar";
+        content: "Frontend Web Developer";
     }
     41%, 60% {
-        content: "Web Designer";
+        content: "Creative Web Designer";
     }
     61%, 80% {
-        content: "Anime Developer";
+        content: "Full-Stack Developer";
     }
     81%, 100% {
-        content: "Script Writter";
+        content: "Game Developer";
     }
 }
 
@@ -363,6 +369,10 @@ span {
         font-size: 5rem;
     }
 
+    .typing-text span {
+        font-size: 18px;
+    }
+
     .home-img img {
         width: 70vw;
         margin-top: 4rem;
@@ -371,6 +381,11 @@ span {
 
 .services {
     background: var(--second-bg-color);
+    min-height: 80vh;
+}
+
+.services .heading {
+    margin-bottom: 20px;
 }
 
 .services-container {
@@ -451,6 +466,7 @@ span {
 
 .skills {
     background: var(--bg-color);
+    min-height: 80vh;
 }
 
 .skills .container {
@@ -465,9 +481,13 @@ span {
 
 .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
+}
+
+.skills .container .row img {
+    width: 50%;
 }
 
 .skills .container .bar {
