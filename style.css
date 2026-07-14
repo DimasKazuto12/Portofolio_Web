@@ -28,18 +28,6 @@ body {
     color: var(--text-color);
 }
 
-html::-webkit-scrollbar {
-    width: 0.8rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-
-html::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-}
-
 .home-content h1 {
     font-size: 80px;
     margin-top: 20px;
@@ -541,7 +529,7 @@ span {
 
 .education {
     background: var(--second-bg-color);
-    padding: 100px 15px;
+    padding: 60px 15px;
 }
 
 .education h2 {
@@ -634,19 +622,6 @@ span {
     text-align: center;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
-    width: 50px;
-}
-
 .contact h2 {
     margin-bottom: 3rem;
     color: white;
@@ -685,7 +660,7 @@ span {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: var(--main-color);
 }
 
