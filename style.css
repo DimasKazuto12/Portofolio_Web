@@ -304,16 +304,16 @@ span {
 
 @keyframes words {
     0%, 20% {
-        content: "Junior Web Developer";
+        content: "Web Developer";
     }
     21%, 40% {
-        content: "Frontend Web Developer";
+        content: "Frontend Developer";
     }
     41%, 60% {
-        content: "Creative Web Designer";
+        content: "Web Designer";
     }
     61%, 80% {
-        content: "Full-Stack Developer";
+        content: "Backend Developer";
     }
     81%, 100% {
         content: "Game Developer";
@@ -354,11 +354,14 @@ span {
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+        margin-bottom: 10px;
     }
 
+   
+
     .typing-text span {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .home-img img {
@@ -524,6 +527,10 @@ span {
     .skills .container {
         margin-top: 5px;
         width: 100%;
+    }
+
+    .timeline-content p{
+        display: none;
     }
 }
 
